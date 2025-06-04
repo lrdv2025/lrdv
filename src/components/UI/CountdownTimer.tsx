@@ -106,7 +106,7 @@ const CountdownTimer: React.FC<{ targetDate?: Date; eventLabel?: string }> = ({
 
   // Function to scroll to results section
   const scrollToResults = () => {
-    const resultsSection = document.getElementById('rezultate');
+    const resultsSection = document.getElementById('results');
     if (resultsSection) {
       resultsSection.scrollIntoView({ behavior: 'smooth' });
     }
@@ -139,12 +139,12 @@ const CountdownTimer: React.FC<{ targetDate?: Date; eventLabel?: string }> = ({
           <p className="registration-message">
             Rezultatele s-au postat!
           </p>
-          <RegistrationButton 
+          <button 
             className="countdown-cta"
             onClick={scrollToResults}
           >
             Vezi rezultatele
-          </RegistrationButton>
+          </button>
         </div>
       );
     }
