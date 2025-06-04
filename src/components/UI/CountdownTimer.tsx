@@ -1,6 +1,7 @@
 // src/components/UI/CountdownTimer.tsx
 import React, { useState, useEffect } from 'react';
 import { getRegistrationStatus } from '../../config';
+import config from '../../config';
 import { timeService } from '../../services/TimeService';
 import RegistrationButton from './RegistrationButton';
 import '../../styles/components/countdown-timer.css';
@@ -103,6 +104,14 @@ const CountdownTimer: React.FC<{ targetDate?: Date; eventLabel?: string }> = ({
     return value < 10 ? `0${value}` : value.toString();
   };
 
+  // Function to scroll to results section
+  const scrollToResults = () => {
+    const resultsSection = document.getElementById('rezultate');
+    if (resultsSection) {
+      resultsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   // Show loading state while initializing
   if (!isInitialized) {
     return (
@@ -122,6 +131,23 @@ const CountdownTimer: React.FC<{ targetDate?: Date; eventLabel?: string }> = ({
   const renderContent = () => {
     // Always get fresh status
     const status = getRegistrationStatus();
+    
+    // Check if results are posted
+    if (config.resultsLink) {
+      return (
+        <div className="countdown-expired">
+          <p className="registration-message">
+            Rezultatele s-au postat!
+          </p>
+          <RegistrationButton 
+            className="countdown-cta"
+            onClick={scrollToResults}
+          >
+            Vezi rezultatele
+          </RegistrationButton>
+        </div>
+      );
+    }
     
     if (status.phase === 'before') {
       return (
