@@ -106,7 +106,7 @@ const CountdownTimer: React.FC<{ targetDate?: Date; eventLabel?: string }> = ({
 
   // Function to scroll to results section
   const scrollToResults = () => {
-    const resultsSection = document.getElementById('results');
+    const resultsSection = document.getElementById('rezultate');
     if (resultsSection) {
       resultsSection.scrollIntoView({ behavior: 'smooth' });
     }
