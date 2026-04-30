@@ -233,7 +233,7 @@ const HomeContent: React.FC = () => {
 
                 <div className="evaluation-item">
                   <p className="content-paragraph">
-                    Rezultatele vor fi publicate pe site-ul unității școlare organizatoare, <a href="https://www.liis.ro/" target="_blank" rel="noopener noreferrer">https://www.liis.ro/</a>, cu respectarea legislației privind protecția datelor cu caracter personal ale elevilor, în cel mult <strong>72 de ore</strong> de la finalizarea evaluării.
+                    Rezultatele vor fi publicate pe site-ul unității școlare organizatoare, <a href="https://www.liis.ro/" target="_blank" rel="noopener noreferrer" style={{ fontWeight: 600, textDecoration: 'underline' }}>https://www.liis.ro/</a>, cu respectarea legislației privind protecția datelor cu caracter personal ale elevilor, în cel mult <strong>72 de ore</strong> de la finalizarea evaluării.
                   </p>
                 </div>
 
