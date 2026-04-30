@@ -107,13 +107,10 @@ const HomeContent: React.FC = () => {
           <div className="section-content">
             <div className="content-card animate-on-scroll">
               <p className="content-paragraph">
-                Etapa de înscriere are loc în intervalul <strong>21‒26.05.2026</strong>.
+                Înscrierea echipajelor se realizează doar în perioada <strong>21‒26 mai 2026</strong> de către unul dintre profesorii coordonatori, prin completarea câmpurilor din formularul ce poate fi accesat în colțul din dreapta sus al paginii.
               </p>
               <p className="content-paragraph">
-                Se completează <strong>obligatoriu</strong> formularul de înscriere din colțul din dreapta sus al paginii.
-              </p>
-              <p className="content-paragraph">
-                Proiectul va fi trimis pe adresa de email <strong><a href={`mailto:${config.email}`}>{config.email}</a></strong>.
+                Proiectul va fi trimis pe adresa de email <strong><a href={`mailto:${config.email}`}>{config.email}</a></strong> până la data de <strong>26 mai</strong>.
               </p>
             </div>
           </div>
@@ -224,7 +221,19 @@ const HomeContent: React.FC = () => {
 
                 <div className="evaluation-item">
                   <p className="content-paragraph">
-                    Etapa de evaluare are loc în intervalul <strong>3-4.06.2025</strong>.
+                    Etapa de evaluare are loc în intervalul <strong>27‒28 mai 2026</strong>.
+                  </p>
+                </div>
+
+                <div className="evaluation-item">
+                  <p className="content-paragraph">
+                    Toate proiectele vor fi redactate respectându-se normele ortografice în vigoare şi normele de tehnoredactare în limba română. În situaţia nerespectării acestei prevederi, lucrările vor fi depunctate conform baremului de evaluare.
+                  </p>
+                </div>
+
+                <div className="evaluation-item">
+                  <p className="content-paragraph">
+                    Rezultatele vor fi publicate pe site-ul unității școlare organizatoare, <a href="https://www.liis.ro/" target="_blank" rel="noopener noreferrer">https://www.liis.ro/</a>, cu respectarea legislației privind protecția datelor cu caracter personal ale elevilor, în cel mult <strong>72 de ore</strong> de la finalizarea evaluării.
                   </p>
                 </div>
 
@@ -255,12 +264,17 @@ const HomeContent: React.FC = () => {
               <div className="evaluation-rules">
                 <h3 className="rules-title">Reguli importante</h3>
                 <ul className="rules-list">
-                  <li>Premiile și mențiunile se acordă în conformitate cu prevederile din <strong>Ordinul privind modificarea Anexei nr. 1 a Ordinului ministrului educației, cercetării, tineretului și sportului nr. 3035/2012</strong>.</li>
-                  <li>Nu se admit contestații.</li>
-                  <li>Profesorii evaluatori nu pot avea elevi înscriși în concurs.</li>
-                  <li>În cazul în care la o secțiune proiectele nu s-au încadrat în parametrii de calitate vizați, iar punctajele sunt sub nivelul punctajelor acordate la secțiunile celelalte, membrii comisiei pot decide redistribuirea premiilor.</li>
-                  <li>Toate proiectele vor fi redactate respectându-se normele ortografice în vigoare și normele de tehnoredactare în limba română.</li>
-                  <li>Nu sunt admise produse/proiecte care au fost deja prezentate și/sau premiate în alte concursuri județene/naționale.</li>
+                  <li>Premiile și mențiunile (constând în diplome) se acordă în conformitate cu prevederile art. 93-94 din <strong>Normele metodologice de organizare și desfășurare a olimpiadelor școlare și a concursurilor școlare</strong>, anexă la Ordinul ministrului educației și cercetării nr. 6727/2025.</li>
+                  <li>
+                    În situația în care doi sau mai mulţi participanţi obţin acelaşi punctaj, se aplică, în următoarea ordine, criteriile de departajare:
+                    <ol>
+                      <li>punctajul obținut pentru conținutul literar;</li>
+                      <li>punctajul obținut pentru partea de informatică.</li>
+                    </ol>
+                  </li>
+                  <li>Toți elevii participanți vor primi diplome de participare.</li>
+                  <li>În cazul în care la o secţiune proiectele nu s-au încadrat în parametrii de calitate vizaţi iar punctajele sunt sub nivelul punctajelor acordate la secţiunile celelalte, membrii comisiei pot decide redistribuirea premiilor.</li>
+                  <li>Participarea la concurs nu presupune taxe sau vreo altă contribuție financiară din partea elevilor/copiilor, a părinților acestora și a cadrelor didactice și nu este condiționată de achiziții de foi de concurs, reviste, cărți, manuale școlare, instrumente de calcul sau de scris etc.</li>
                 </ul>
 
                 <div className="commission-info">
