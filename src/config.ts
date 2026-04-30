@@ -15,20 +15,21 @@ export interface Config {
 //=========================================================
 //              Configurare centralizata
 //  Editati aici pentru a schimba configuratia site-ului
+//             Ultimul update: 01.05.2026
 //=========================================================
 const configData: Config = {
   // Link catre google form pentru inscriere, editati cu link-ul corect pentru a schimba peste tot in site
-  registrationFormLink: "https://forms.gle/oKjrwTtYSyZ2mjpW8",
+  registrationFormLink: "https://forms.gle/ry7tJwFyfXozXcB3A",
 
   email: "lrdv@liis.ro",
 
   registrationPeriod: {
-    startDate: new Date("2025-05-28T00:00:00"), // Data când se deschide înscrierea
-    endDate: new Date("2025-05-30T23:59:00"), // Data când se închide înscrierea
+    startDate: new Date("2026-05-21T00:00:00"), // Data când se deschide înscrierea
+    endDate: new Date("2026-05-26T23:59:00"), // Data când se închide înscrierea
   },
 
   // Link catre google drive pentru rezultate, lasati null daca nu exista inca. Se poate utiliza si orice alt service de stocare a fisierelor.
-  resultsLink: "https://drive.google.com/file/d/1ZzcDgdsELJFy1RnhjCRfj7cXReC0_J2d/view?usp=drive_link", // Example: "https://drive.google.com/file/d/..." / null
+  resultsLink: null, // Example: "https://drive.google.com/file/d/..." / null
 
   // Array cu id-urile sectiunilor care trebuie ascunse. Acestea vor fi ascunse din meniu si din pagina principala.
   // Exemplu: ['rezultate', 'inscriere', etc.]
